@@ -14,6 +14,20 @@ class PlannerAgent:
 
     def run(self, user_request):
         self.memory.store("user_request", user_request)
+        #1 Perception & Interpretation:** Parses the query, extracting destination (Thailand), duration (2 weeks), season (winter), traveler count (family implies 4), budget ($5,000), preferences (kid-friendly hotels, cultural activities, elephants).
+
+
+        #2 Planning: 
+
+
+        #3: Tool use (execute planned tasks): 
+
+        #5: Perception: summarize data
+
+        #6: If no schedule available, give more suggestions to user to select: increase budget, change dates, etc
+
+        #7: adaptive response: e planing
+
 
         flights = self.flight_agent.plan_flight(user_request)
         hotels = self.hotel_agent.plan_hotel(user_request)
